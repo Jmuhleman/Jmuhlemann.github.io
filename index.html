@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Custom Header -->
+    <meta name="author" content="Bonvin Hugues">
+    <meta name="description" content="This is a folium map to displays the Canal K">
+    <title>Canal K</title>
+    <link rel="shortcut icon" href="https://www.svgrepo.com/show/282004/antenna.svg">
+    
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f1202a4b70576d728f4dd30e0ca83c98 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+    <h3 align="center" style="font-size:20px"><b>OCVS/KWRO - Canal K</b></h3>
+    
+    
+            <div class="folium-map" id="map_f1202a4b70576d728f4dd30e0ca83c98" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f1202a4b70576d728f4dd30e0ca83c98 = L.map(
+                "map_f1202a4b70576d728f4dd30e0ca83c98",
+                {
+                    center: [46.227186, 7.542836],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+  "title": "Canal K",
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_605614c8932ce4d864e08485eb5d9e32 = L.tileLayer(
+                "https://tile.osm.ch/switzerland/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_605614c8932ce4d864e08485eb5d9e32.addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var tile_layer_a566ab80fe7778f454b4d13ebdef6c3e = L.tileLayer(
+                "https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.swissimage/default/current/3857/{z}/{x}/{y}.jpeg",
+                {
+  "minZoom": 2,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u003ca target=\"_blank\" href=\"https://www.swisstopo.admin.ch/\"\u003eswisstopo\u003c/a\u003e",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a566ab80fe7778f454b4d13ebdef6c3e.addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var tile_layer_488b475f107f259247328f587cc7de79 = L.tileLayer(
+                "https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{z}/{x}/{y}.jpeg",
+                {
+  "minZoom": 2,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "\u003ca target=\"_blank\" href=\"https://www.swisstopo.admin.ch/\"\u003eswisstopo\u003c/a\u003e",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_488b475f107f259247328f587cc7de79.addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var tile_layer_e69d7c2d09054448e234ea3858de2b07 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e69d7c2d09054448e234ea3858de2b07.addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var layer_control_1d9c028cf1bc65900ef99e0c08dc71ad_layers = {
+                base_layers : {
+                    "Open Street Map" : tile_layer_605614c8932ce4d864e08485eb5d9e32,
+                    "Swiss Image" : tile_layer_a566ab80fe7778f454b4d13ebdef6c3e,
+                    "Swiss National" : tile_layer_488b475f107f259247328f587cc7de79,
+                    "Carto DB" : tile_layer_e69d7c2d09054448e234ea3858de2b07,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_1d9c028cf1bc65900ef99e0c08dc71ad = L.control.layers(
+                layer_control_1d9c028cf1bc65900ef99e0c08dc71ad_layers.base_layers,
+                layer_control_1d9c028cf1bc65900ef99e0c08dc71ad_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+
+        
+    
+            var marker_11f4cad704eda77bf4ada6b0ef3d8d55 = L.marker(
+                [46.28931, 7.54083],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var icon_fada1e9f7960a2836e3fa204c711d1db = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "house",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_69086b17e678d0f3947f434520f08f46 = L.popup({
+  "maxWidth": 180,
+  "minWidth": 100,
+});
+
+        
+            
+                var html_9d1aabf45869f021e268506a79a2fb69 = $(`<div id="html_9d1aabf45869f021e268506a79a2fb69" style="width: 100.0%; height: 100.0%;"><b>Centrale Sierre</b><br>Connexion : Home site<br>WSG 84 : 46.28931, 7.54083<br><a href="https://api.cloudrf.com/API/archive/calc?id=dkhKb1h3MFovejcrSWJkdU1VaXZEQT09">Coverage area</a></div>`)[0];
+                popup_69086b17e678d0f3947f434520f08f46.setContent(html_9d1aabf45869f021e268506a79a2fb69);
+            
+        
+
+        marker_11f4cad704eda77bf4ada6b0ef3d8d55.bindPopup(popup_69086b17e678d0f3947f434520f08f46)
+        ;
+
+        
+    
+    
+                marker_11f4cad704eda77bf4ada6b0ef3d8d55.setIcon(icon_fada1e9f7960a2836e3fa204c711d1db);
+            
+    
+            var marker_2719fed43fbc5bff0e42ba63fcaf4f54 = L.marker(
+                [46.28931, 7.54083],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var div_icon_55f9d832c0e95c83b10ead07adb26971 = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: Arial; color: black\"; width: 350px; min-width: 100px;\u003e\u003cbr\u003eCentrale Sierre\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_2719fed43fbc5bff0e42ba63fcaf4f54.setIcon(div_icon_55f9d832c0e95c83b10ead07adb26971);
+            
+    
+            var marker_a134d343ab6c9d28c9f60af466b7d2f9 = L.marker(
+                [46.09289, 7.38603],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var icon_eeac4a6e11753298fca2185e2afcd03a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tower-cell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_515b58cf92ffb0d3178cd330624e9d76 = L.popup({
+  "maxWidth": 180,
+  "minWidth": 100,
+});
+
+        
+            
+                var html_6d70b42d45ce705a798c04446c5e4ccd = $(`<div id="html_6d70b42d45ce705a798c04446c5e4ccd" style="width: 100.0%; height: 100.0%;"><b>Arolla</b><br>Connexion : Swisscom wire<br>WSG 84 : 46.09289, 7.38603<br><a href="https://api.cloudrf.com/API/archive/calc?id=eGk2d3p3MUlmNFZYRDBpM2prc2RLdz09">Coverage area</a></div>`)[0];
+                popup_515b58cf92ffb0d3178cd330624e9d76.setContent(html_6d70b42d45ce705a798c04446c5e4ccd);
+            
+        
+
+        marker_a134d343ab6c9d28c9f60af466b7d2f9.bindPopup(popup_515b58cf92ffb0d3178cd330624e9d76)
+        ;
+
+        
+    
+    
+                marker_a134d343ab6c9d28c9f60af466b7d2f9.setIcon(icon_eeac4a6e11753298fca2185e2afcd03a);
+            
+    
+            var marker_763d038d172ca7d3f35b9f5d09ea4b77 = L.marker(
+                [46.09289, 7.38603],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var div_icon_49669fd234b17dc44252c28e39ca6c4a = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: Arial; color: black\"; width: 350px; min-width: 100px;\u003e\u003cbr\u003eArolla\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_763d038d172ca7d3f35b9f5d09ea4b77.setIcon(div_icon_49669fd234b17dc44252c28e39ca6c4a);
+            
+    
+            var marker_243b20a087c5924e71ee299fe6b7d956 = L.marker(
+                [46.17522, 6.84563],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var icon_5cf1d09fe95d62703fbd377e8c615bc1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tower-cell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_47659b0082210ab5753281bdaf293ee2 = L.popup({
+  "maxWidth": 180,
+  "minWidth": 100,
+});
+
+        
+            
+                var html_b6db8f45ba0361a7ba5cf79c014e99ca = $(`<div id="html_b6db8f45ba0361a7ba5cf79c014e99ca" style="width: 100.0%; height: 100.0%;"><b>Croix-Culet</b><br>Connexion : Swisscom wire<br>WSG 84 : 46.17522, 6.84563<br><a href="https://api.cloudrf.com/API/archive/calc?id=aktsdll2dFE1NnVOeGtrZ0M5UGU1Zz09">Coverage area</a></div>`)[0];
+                popup_47659b0082210ab5753281bdaf293ee2.setContent(html_b6db8f45ba0361a7ba5cf79c014e99ca);
+            
+        
+
+        marker_243b20a087c5924e71ee299fe6b7d956.bindPopup(popup_47659b0082210ab5753281bdaf293ee2)
+        ;
+
+        
+    
+    
+                marker_243b20a087c5924e71ee299fe6b7d956.setIcon(icon_5cf1d09fe95d62703fbd377e8c615bc1);
+            
+    
+            var marker_b4ffe473d5dbaa7fb561a1daba5e7152 = L.marker(
+                [46.17522, 6.84563],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var div_icon_c7a3d65fb93c13e49e76b4acf4f381bc = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: Arial; color: black\"; width: 350px; min-width: 100px;\u003e\u003cbr\u003eCroix-Culet\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_b4ffe473d5dbaa7fb561a1daba5e7152.setIcon(div_icon_c7a3d65fb93c13e49e76b4acf4f381bc);
+            
+    
+            var marker_80921ac30ea65b4218f3871d21d0a387 = L.marker(
+                [46.42724, 8.09337],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var icon_80972313e7d4ebf0e4557a1fcdc6f0c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tower-cell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2efc26d63e3a6f12d0b068d424040a23 = L.popup({
+  "maxWidth": 180,
+  "minWidth": 100,
+});
+
+        
+            
+                var html_9b8d70ee8418aa2d31955e8d8e394204 = $(`<div id="html_9b8d70ee8418aa2d31955e8d8e394204" style="width: 100.0%; height: 100.0%;"><b>Eggishorn</b><br>Connexion : Swisscom wire<br>WSG 84 : 46.42724, 8.09337<br><a href="https://api.cloudrf.com/API/archive/calc?id=RW9uMHNET1VmQWxwVU0rUFJQemtlQT09">Coverage area</a></div>`)[0];
+                popup_2efc26d63e3a6f12d0b068d424040a23.setContent(html_9b8d70ee8418aa2d31955e8d8e394204);
+            
+        
+
+        marker_80921ac30ea65b4218f3871d21d0a387.bindPopup(popup_2efc26d63e3a6f12d0b068d424040a23)
+        ;
+
+        
+    
+    
+                marker_80921ac30ea65b4218f3871d21d0a387.setIcon(icon_80972313e7d4ebf0e4557a1fcdc6f0c1);
+            
+    
+            var marker_160e7ae71eff96483dacbc8ce88cdb05 = L.marker(
+                [46.42724, 8.09337],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var div_icon_de0e83795055339bcc33bd56d37acc9d = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: Arial; color: black\"; width: 350px; min-width: 100px;\u003e\u003cbr\u003eEggishorn\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_160e7ae71eff96483dacbc8ce88cdb05.setIcon(div_icon_de0e83795055339bcc33bd56d37acc9d);
+            
+    
+            var marker_2ba2ae871c5d793bd066b71686dfe752 = L.marker(
+                [46.12101, 7.45554],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var icon_031231988a6c38d7195f7ba3b80ec5f8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tower-cell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_df84a63d0833e7502cdf86c4901a2c5f = L.popup({
+  "maxWidth": 180,
+  "minWidth": 100,
+});
+
+        
+            
+                var html_359127e4a9b874a18e67d45573f7077f = $(`<div id="html_359127e4a9b874a18e67d45573f7077f" style="width: 100.0%; height: 100.0%;"><b>Evolène</b><br>Connexion : Swisscom wire<br>WSG 84 : 46.12101, 7.45554<br><a href="https://api.cloudrf.com/API/archive/calc?id=T1RJR09QdFZQSDZ3anVDcThOSHNwdz09">Coverage area</a></div>`)[0];
+                popup_df84a63d0833e7502cdf86c4901a2c5f.setContent(html_359127e4a9b874a18e67d45573f7077f);
+            
+        
+
+        marker_2ba2ae871c5d793bd066b71686dfe752.bindPopup(popup_df84a63d0833e7502cdf86c4901a2c5f)
+        ;
+
+        
+    
+    
+                marker_2ba2ae871c5d793bd066b71686dfe752.setIcon(icon_031231988a6c38d7195f7ba3b80ec5f8);
+            
+    
+            var marker_c8ff443060176ff988095c68485af00f = L.marker(
+                [46.12101, 7.45554],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var div_icon_319672e6bc4cdc361e8f3dbb871bc4b6 = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: Arial; color: black\"; width: 350px; min-width: 100px;\u003e\u003cbr\u003eEvol\u00e8ne\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_c8ff443060176ff988095c68485af00f.setIcon(div_icon_319672e6bc4cdc361e8f3dbb871bc4b6);
+            
+    
+            var marker_5f5d82d09c702aa9440c7559347d48a3 = L.marker(
+                [46.139694, 7.991161],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var icon_4e46308b324cd08bcc0c7b253c4efe0a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tower-cell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f7214222a04bbc31ae1aa4b848ba265c = L.popup({
+  "maxWidth": 180,
+  "minWidth": 100,
+});
+
+        
+            
+                var html_064e506bac8f099901c0599fc5616b14 = $(`<div id="html_064e506bac8f099901c0599fc5616b14" style="width: 100.0%; height: 100.0%;"><b>Hohsaas</b><br>Connexion : Teltonika 4G<br>WSG 84 : 46.139694, 7.991161<br><a href="https://api.cloudrf.com/API/archive/calc?id=d3hwT0htWjF1UXJxVmRzeDJmR01KZz09">Coverage area</a></div>`)[0];
+                popup_f7214222a04bbc31ae1aa4b848ba265c.setContent(html_064e506bac8f099901c0599fc5616b14);
+            
+        
+
+        marker_5f5d82d09c702aa9440c7559347d48a3.bindPopup(popup_f7214222a04bbc31ae1aa4b848ba265c)
+        ;
+
+        
+    
+    
+                marker_5f5d82d09c702aa9440c7559347d48a3.setIcon(icon_4e46308b324cd08bcc0c7b253c4efe0a);
+            
+    
+            var marker_12b97302363ce16f1852a602bbe43f44 = L.marker(
+                [46.139694, 7.991161],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var div_icon_50a46b05217fbafaf83023f77b501d76 = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: Arial; color: black\"; width: 350px; min-width: 100px;\u003e\u003cbr\u003eHohsaas\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_12b97302363ce16f1852a602bbe43f44.setIcon(div_icon_50a46b05217fbafaf83023f77b501d76);
+            
+    
+            var marker_37c6269dc39e9dfc389fdd6411b3bcbd = L.marker(
+                [46.28903, 7.02132],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var icon_ca1cb81425ae08edd5c2228ea52c224f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tower-cell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bc811d4c3ffc6d6cfff95b3c3dc56b74 = L.popup({
+  "maxWidth": 180,
+  "minWidth": 100,
+});
+
+        
+            
+                var html_e7311be727a74a7a15ae0a872f4526f8 = $(`<div id="html_e7311be727a74a7a15ae0a872f4526f8" style="width: 100.0%; height: 100.0%;"><b>Huémoz</b><br>Connexion : Swisscom wire<br>WSG 84 : 46.28903, 7.02132<br><a href="https://api.cloudrf.com/API/archive/calc?id=WUhHZTRLOFBvaDZpOHdTY2tZaVpnZz09">Coverage area</a></div>`)[0];
+                popup_bc811d4c3ffc6d6cfff95b3c3dc56b74.setContent(html_e7311be727a74a7a15ae0a872f4526f8);
+            
+        
+
+        marker_37c6269dc39e9dfc389fdd6411b3bcbd.bindPopup(popup_bc811d4c3ffc6d6cfff95b3c3dc56b74)
+        ;
+
+        
+    
+    
+                marker_37c6269dc39e9dfc389fdd6411b3bcbd.setIcon(icon_ca1cb81425ae08edd5c2228ea52c224f);
+            
+    
+            var marker_9b5200de67e8730e20382144326e71cf = L.marker(
+                [46.28903, 7.02132],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var div_icon_21897086bcfdb217324f86606e3ed8b3 = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: Arial; color: black\"; width: 350px; min-width: 100px;\u003e\u003cbr\u003eHu\u00e9moz\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_9b5200de67e8730e20382144326e71cf.setIcon(div_icon_21897086bcfdb217324f86606e3ed8b3);
+            
+    
+            var marker_18c364c1cf8f60b784059cf4e171776a = L.marker(
+                [46.395524, 7.764003],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var icon_5e594311d14c5713328e71e471aad688 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tower-cell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_355e31ace4fd441bb8acd84420dd31b2 = L.popup({
+  "maxWidth": 180,
+  "minWidth": 100,
+});
+
+        
+            
+                var html_c3222cbc731a5eaae3fa7040aeb430d5 = $(`<div id="html_c3222cbc731a5eaae3fa7040aeb430d5" style="width: 100.0%; height: 100.0%;"><b>Kippel</b><br>Connexion : Swisscom 4G<br>WSG 84 : 46.395524, 7.764003<br><a href="https://api.cloudrf.com/API/archive/calc?id=MkltLzN1a2ZDVCtXVHFtVldMV1JLQT09">Coverage area</a></div>`)[0];
+                popup_355e31ace4fd441bb8acd84420dd31b2.setContent(html_c3222cbc731a5eaae3fa7040aeb430d5);
+            
+        
+
+        marker_18c364c1cf8f60b784059cf4e171776a.bindPopup(popup_355e31ace4fd441bb8acd84420dd31b2)
+        ;
+
+        
+    
+    
+                marker_18c364c1cf8f60b784059cf4e171776a.setIcon(icon_5e594311d14c5713328e71e471aad688);
+            
+    
+            var marker_7b15f1366746fac631b08ded2e941172 = L.marker(
+                [46.395524, 7.764003],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var div_icon_63a5bf16b782a78423f83398b7b1056d = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: Arial; color: black\"; width: 350px; min-width: 100px;\u003e\u003cbr\u003eKippel\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_7b15f1366746fac631b08ded2e941172.setIcon(div_icon_63a5bf16b782a78423f83398b7b1056d);
+            
+    
+            var marker_cfbc8f78abb37afe3776ca7c5edd7b2d = L.marker(
+                [46.02169, 7.103525],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var icon_3e08e1f828925d4159de83d506c94486 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tower-cell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dbc622f900439d9dc539713b9fffe074 = L.popup({
+  "maxWidth": 180,
+  "minWidth": 100,
+});
+
+        
+            
+                var html_17d7d75947f1e435d6870c8964c72200 = $(`<div id="html_17d7d75947f1e435d6870c8964c72200" style="width: 100.0%; height: 100.0%;"><b>La Breya</b><br>Connexion : Swisscom wire<br>WSG 84 : 46.02169, 7.103525<br><a href="https://api.cloudrf.com/API/archive/calc?id=L1gyNWdoMXpSOGVOd254ZFZ5L2JPdz09">Coverage area</a></div>`)[0];
+                popup_dbc622f900439d9dc539713b9fffe074.setContent(html_17d7d75947f1e435d6870c8964c72200);
+            
+        
+
+        marker_cfbc8f78abb37afe3776ca7c5edd7b2d.bindPopup(popup_dbc622f900439d9dc539713b9fffe074)
+        ;
+
+        
+    
+    
+                marker_cfbc8f78abb37afe3776ca7c5edd7b2d.setIcon(icon_3e08e1f828925d4159de83d506c94486);
+            
+    
+            var marker_ea07dcabac4ae0f2984a53154925449c = L.marker(
+                [46.02169, 7.103525],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var div_icon_7feee300bd0cfe82430987343d4a65df = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: Arial; color: black\"; width: 350px; min-width: 100px;\u003e\u003cbr\u003eLa Breya\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_ea07dcabac4ae0f2984a53154925449c.setIcon(div_icon_7feee300bd0cfe82430987343d4a65df);
+            
+    
+            var marker_7c0d8ce85c912047ed9ec1a2250cfc22 = L.marker(
+                [46.25753, 7.84392],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var icon_0818f996047efc4db0b562de809cbfea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tower-cell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dd4effa16a72601351f7816e0a827582 = L.popup({
+  "maxWidth": 180,
+  "minWidth": 100,
+});
+
+        
+            
+                var html_5243b83c98b7bf54172ca51c682a2388 = $(`<div id="html_5243b83c98b7bf54172ca51c682a2388" style="width: 100.0%; height: 100.0%;"><b>Moosalp</b><br>Connexion : Swisscom wire<br>WSG 84 : 46.25753, 7.84392<br><a href="https://api.cloudrf.com/API/archive/calc?id=ZWltV2sycndvS2VZUThYbXdmUVF2QT09">Coverage area</a></div>`)[0];
+                popup_dd4effa16a72601351f7816e0a827582.setContent(html_5243b83c98b7bf54172ca51c682a2388);
+            
+        
+
+        marker_7c0d8ce85c912047ed9ec1a2250cfc22.bindPopup(popup_dd4effa16a72601351f7816e0a827582)
+        ;
+
+        
+    
+    
+                marker_7c0d8ce85c912047ed9ec1a2250cfc22.setIcon(icon_0818f996047efc4db0b562de809cbfea);
+            
+    
+            var marker_f1f2cbc8837400c5fecb3e1c4462956f = L.marker(
+                [46.25753, 7.84392],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var div_icon_ce4925dab2389d9bfd94347aa0e5ab40 = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: Arial; color: black\"; width: 350px; min-width: 100px;\u003e\u003cbr\u003eMoosalp\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_f1f2cbc8837400c5fecb3e1c4462956f.setIcon(div_icon_ce4925dab2389d9bfd94347aa0e5ab40);
+            
+    
+            var marker_d11d66bcdd07e6d85564a30f524a1956 = L.marker(
+                [46.0965, 7.278787],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var icon_a28cbf331d6259fc621fb36358b51a5c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tower-cell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1ffb66ececdcadce2efbc48a99d2e638 = L.popup({
+  "maxWidth": 180,
+  "minWidth": 100,
+});
+
+        
+            
+                var html_c8c694f42571e84c8d56378117786ace = $(`<div id="html_c8c694f42571e84c8d56378117786ace" style="width: 100.0%; height: 100.0%;"><b>Mt-Gelé</b><br>Connexion : Swisscom wire<br>WSG 84 : 46.0965, 7.278787<br><a href="https://api.cloudrf.com/API/archive/calc?id=VXBIZnpJNjdQb0NYMnBDcUlKUEFNUT09">Coverage area</a></div>`)[0];
+                popup_1ffb66ececdcadce2efbc48a99d2e638.setContent(html_c8c694f42571e84c8d56378117786ace);
+            
+        
+
+        marker_d11d66bcdd07e6d85564a30f524a1956.bindPopup(popup_1ffb66ececdcadce2efbc48a99d2e638)
+        ;
+
+        
+    
+    
+                marker_d11d66bcdd07e6d85564a30f524a1956.setIcon(icon_a28cbf331d6259fc621fb36358b51a5c);
+            
+    
+            var marker_a0dc998f6d31745c283b974884174f1b = L.marker(
+                [46.0965, 7.278787],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var div_icon_eb927c0d8990dd554e20587e7828fa98 = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: Arial; color: black\"; width: 350px; min-width: 100px;\u003e\u003cbr\u003eMt-Gel\u00e9\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_a0dc998f6d31745c283b974884174f1b.setIcon(div_icon_eb927c0d8990dd554e20587e7828fa98);
+            
+    
+            var marker_69a2f176fc9c1f43b5ea30b1dd8eb3c8 = L.marker(
+                [46.504421, 8.346921],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var icon_debf50028ff2bec5c123ac1125b5b655 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tower-cell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_434d99fa1042efc882efc5c45fd31eb6 = L.popup({
+  "maxWidth": 180,
+  "minWidth": 100,
+});
+
+        
+            
+                var html_9bf0cd6261a1ce4150c948a04ad64bd6 = $(`<div id="html_9bf0cd6261a1ce4150c948a04ad64bd6" style="width: 100.0%; height: 100.0%;"><b>Nufenen</b><br>Connexion : Teltonika 4G<br>WSG 84 : 46.504421, 8.346921<br><a href="https://api.cloudrf.com/API/archive/calc?id=S3BSd05BQzdSTTI4bm5oYUNiMzJ2Zz09">Coverage area</a></div>`)[0];
+                popup_434d99fa1042efc882efc5c45fd31eb6.setContent(html_9bf0cd6261a1ce4150c948a04ad64bd6);
+            
+        
+
+        marker_69a2f176fc9c1f43b5ea30b1dd8eb3c8.bindPopup(popup_434d99fa1042efc882efc5c45fd31eb6)
+        ;
+
+        
+    
+    
+                marker_69a2f176fc9c1f43b5ea30b1dd8eb3c8.setIcon(icon_debf50028ff2bec5c123ac1125b5b655);
+            
+    
+            var marker_1aea62c2007ee3a3aa69de98d7679cd4 = L.marker(
+                [46.504421, 8.346921],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var div_icon_94252015ca309dfdb54f901e6b7efd1f = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: Arial; color: black\"; width: 350px; min-width: 100px;\u003e\u003cbr\u003eNufenen\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_1aea62c2007ee3a3aa69de98d7679cd4.setIcon(div_icon_94252015ca309dfdb54f901e6b7efd1f);
+            
+    
+            var marker_951d86f81c562fad23f859cd605893d6 = L.marker(
+                [46.31224, 7.38592],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var icon_b1b6b4aa425baf2006a14ae8e9622dac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tower-cell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_58725661d402dc0950955267b8f68ae3 = L.popup({
+  "maxWidth": 180,
+  "minWidth": 100,
+});
+
+        
+            
+                var html_aa49d7199c29d3a1e5f403056695919a = $(`<div id="html_aa49d7199c29d3a1e5f403056695919a" style="width: 100.0%; height: 100.0%;"><b>Pas-Maimbré</b><br>Connexion : Teltonika 4G<br>WSG 84 : 46.31224, 7.38592<br><a href="https://api.cloudrf.com/API/archive/calc?id=Ym5wTTZKd21FY3ZvYnhlZjJ5cUpZUT09">Coverage area</a></div>`)[0];
+                popup_58725661d402dc0950955267b8f68ae3.setContent(html_aa49d7199c29d3a1e5f403056695919a);
+            
+        
+
+        marker_951d86f81c562fad23f859cd605893d6.bindPopup(popup_58725661d402dc0950955267b8f68ae3)
+        ;
+
+        
+    
+    
+                marker_951d86f81c562fad23f859cd605893d6.setIcon(icon_b1b6b4aa425baf2006a14ae8e9622dac);
+            
+    
+            var marker_ca4f03c213e54ccc2d18af3e2122bae8 = L.marker(
+                [46.31224, 7.38592],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var div_icon_6f03c5ffbef02181ccbe9867c032c5ca = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: Arial; color: black\"; width: 350px; min-width: 100px;\u003e\u003cbr\u003ePas-Maimbr\u00e9\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_ca4f03c213e54ccc2d18af3e2122bae8.setIcon(div_icon_6f03c5ffbef02181ccbe9867c032c5ca);
+            
+    
+            var marker_fd7f026b27fc443629b16774b9388af6 = L.marker(
+                [46.10564, 7.03581],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var icon_cd976fb5a62962984139d1979b414312 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tower-cell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_072f05cc380b345b4c5f23e1d466b393 = L.popup({
+  "maxWidth": 180,
+  "minWidth": 100,
+});
+
+        
+            
+                var html_3aea5f89322218dcc9bde89514027538 = $(`<div id="html_3aea5f89322218dcc9bde89514027538" style="width: 100.0%; height: 100.0%;"><b>Roc-Blanc</b><br>Connexion : Teltonika 4G<br>WSG 84 : 46.10564, 7.03581<br><a href="https://api.cloudrf.com/API/archive/calc?id=QXE1NllUbVFRZGI2M1FMelloL3dXZz09">Coverage area</a></div>`)[0];
+                popup_072f05cc380b345b4c5f23e1d466b393.setContent(html_3aea5f89322218dcc9bde89514027538);
+            
+        
+
+        marker_fd7f026b27fc443629b16774b9388af6.bindPopup(popup_072f05cc380b345b4c5f23e1d466b393)
+        ;
+
+        
+    
+    
+                marker_fd7f026b27fc443629b16774b9388af6.setIcon(icon_cd976fb5a62962984139d1979b414312);
+            
+    
+            var marker_dd19a1fb249e1da96932db357608957e = L.marker(
+                [46.10564, 7.03581],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var div_icon_f3ed69b06000fd3c2f7eb1f4fd9df152 = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: Arial; color: black\"; width: 350px; min-width: 100px;\u003e\u003cbr\u003eRoc-Blanc\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_dd19a1fb249e1da96932db357608957e.setIcon(div_icon_f3ed69b06000fd3c2f7eb1f4fd9df152);
+            
+    
+            var marker_8e88364f85eeebfa27c929839d901264 = L.marker(
+                [46.19714, 8.05519],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var icon_b40935b646de3f4bfc4a8a1ab78e2297 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tower-cell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_39bd4a43c04d3bd7ec92cfad7c78592d = L.popup({
+  "maxWidth": 180,
+  "minWidth": 100,
+});
+
+        
+            
+                var html_447eced3dde6260f1fe36ff6b3a50658 = $(`<div id="html_447eced3dde6260f1fe36ff6b3a50658" style="width: 100.0%; height: 100.0%;"><b>Simplon</b><br>Connexion : Net+<br>WSG 84 : 46.19714, 8.05519<br><a href="https://api.cloudrf.com/API/archive/calc?id=aWVVRUNkMXVWdkg1SnRJc1hPOGdDQT09">Coverage area</a></div>`)[0];
+                popup_39bd4a43c04d3bd7ec92cfad7c78592d.setContent(html_447eced3dde6260f1fe36ff6b3a50658);
+            
+        
+
+        marker_8e88364f85eeebfa27c929839d901264.bindPopup(popup_39bd4a43c04d3bd7ec92cfad7c78592d)
+        ;
+
+        
+    
+    
+                marker_8e88364f85eeebfa27c929839d901264.setIcon(icon_b40935b646de3f4bfc4a8a1ab78e2297);
+            
+    
+            var marker_3339ee9095510967c0fcf8fb843795fb = L.marker(
+                [46.19714, 8.05519],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var div_icon_be30aa0ec149971f59cb560b35d637b5 = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: Arial; color: black\"; width: 350px; min-width: 100px;\u003e\u003cbr\u003eSimplon\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_3339ee9095510967c0fcf8fb843795fb.setIcon(div_icon_be30aa0ec149971f59cb560b35d637b5);
+            
+    
+            var marker_0e29e02c2d3c574638f0bfe1a7b55e31 = L.marker(
+                [46.14492, 7.603943],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var icon_66899518fa31e778da57ad0b593f1ce9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tower-cell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba14aa300324d7a18a70509248b22e1f = L.popup({
+  "maxWidth": 180,
+  "minWidth": 100,
+});
+
+        
+            
+                var html_a3155914e6a565d317bca3a80f55028b = $(`<div id="html_a3155914e6a565d317bca3a80f55028b" style="width: 100.0%; height: 100.0%;"><b>Sorebois</b><br>Connexion : Swisscom wire<br>WSG 84 : 46.14492, 7.603943<br><a href="https://api.cloudrf.com/API/archive/calc?id=Z21QeFl2WUp3ZkdoMjdEMTk1WnA2dz09">Coverage area</a></div>`)[0];
+                popup_ba14aa300324d7a18a70509248b22e1f.setContent(html_a3155914e6a565d317bca3a80f55028b);
+            
+        
+
+        marker_0e29e02c2d3c574638f0bfe1a7b55e31.bindPopup(popup_ba14aa300324d7a18a70509248b22e1f)
+        ;
+
+        
+    
+    
+                marker_0e29e02c2d3c574638f0bfe1a7b55e31.setIcon(icon_66899518fa31e778da57ad0b593f1ce9);
+            
+    
+            var marker_0c4d2c98b2d20c4057882f3f84b9a39d = L.marker(
+                [46.14492, 7.603943],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var div_icon_5471b5691120c8ccf854e8a1be2fa5c6 = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: Arial; color: black\"; width: 350px; min-width: 100px;\u003e\u003cbr\u003eSorebois\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_0c4d2c98b2d20c4057882f3f84b9a39d.setIcon(div_icon_5471b5691120c8ccf854e8a1be2fa5c6);
+            
+    
+            var marker_38f39671e2e54d72e84ff85a3a11c3ce = L.marker(
+                [45.99172, 7.70951],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var icon_6e12488b670e56110eeb97f57244b0b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tower-cell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fc74083e89433c38cd842fc771265599 = L.popup({
+  "maxWidth": 180,
+  "minWidth": 100,
+});
+
+        
+            
+                var html_2e48db9373a6e403a6928502bd8cb8c1 = $(`<div id="html_2e48db9373a6e403a6928502bd8cb8c1" style="width: 100.0%; height: 100.0%;"><b>Zermatt</b><br>Connexion : Teltonika 4G<br>WSG 84 : 45.99172, 7.70951<br><a href="https://api.cloudrf.com/API/archive/calc?id=dmtZazlqNkkvWW41K2JySGZ0dmd4Zz09">Coverage area</a></div>`)[0];
+                popup_fc74083e89433c38cd842fc771265599.setContent(html_2e48db9373a6e403a6928502bd8cb8c1);
+            
+        
+
+        marker_38f39671e2e54d72e84ff85a3a11c3ce.bindPopup(popup_fc74083e89433c38cd842fc771265599)
+        ;
+
+        
+    
+    
+                marker_38f39671e2e54d72e84ff85a3a11c3ce.setIcon(icon_6e12488b670e56110eeb97f57244b0b9);
+            
+    
+            var marker_c51c146fa54ca66e8874e5da909745f6 = L.marker(
+                [45.99172, 7.70951],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var div_icon_2af021b14b60bdca5bece10d97c12cc3 = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: Arial; color: black\"; width: 350px; min-width: 100px;\u003e\u003cbr\u003eZermatt\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_c51c146fa54ca66e8874e5da909745f6.setIcon(div_icon_2af021b14b60bdca5bece10d97c12cc3);
+            
+    
+            var marker_0bb12d0d4edb5ad0a19286ea73bd68ef = L.marker(
+                [46.359731, 7.618756],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var icon_f5cb0782d1a5c79aa52f5808e7ce8f43 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tower-cell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0079bbcac4b4b9ebe7aa22889c3ac927 = L.popup({
+  "maxWidth": 180,
+  "minWidth": 100,
+});
+
+        
+            
+                var html_c7e11b3ab74089cae00cfe9c79485608 = $(`<div id="html_c7e11b3ab74089cae00cfe9c79485608" style="width: 100.0%; height: 100.0%;"><b>Leuk</b><br>Connexion : Swisscom wire<br>WSG 84 : 46.359731, 7.618756<br><a href="https://api.cloudrf.com/API/archive/calc?id=ZmJVQ2dFOU93SldvOEZUOGd1cXcwdz09">Coverage area</a></div>`)[0];
+                popup_0079bbcac4b4b9ebe7aa22889c3ac927.setContent(html_c7e11b3ab74089cae00cfe9c79485608);
+            
+        
+
+        marker_0bb12d0d4edb5ad0a19286ea73bd68ef.bindPopup(popup_0079bbcac4b4b9ebe7aa22889c3ac927)
+        ;
+
+        
+    
+    
+                marker_0bb12d0d4edb5ad0a19286ea73bd68ef.setIcon(icon_f5cb0782d1a5c79aa52f5808e7ce8f43);
+            
+    
+            var marker_bd65475381c562a9102d41c2e1ffa695 = L.marker(
+                [46.359731, 7.618756],
+                {
+}
+            ).addTo(map_f1202a4b70576d728f4dd30e0ca83c98);
+        
+    
+            var div_icon_f7cf7a7ec83071fd9cc7309aab68442c = L.divIcon({
+  "html": "\u003cdiv style=\"font-family: Arial; color: black\"; width: 350px; min-width: 100px;\u003e\u003cbr\u003eLeuk\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_bd65475381c562a9102d41c2e1ffa695.setIcon(div_icon_f7cf7a7ec83071fd9cc7309aab68442c);
+            
+</script>
+</html>
